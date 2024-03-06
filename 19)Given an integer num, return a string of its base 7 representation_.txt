@@ -1,0 +1,9 @@
+num = 100
+base_7 = ''
+if num == 0:
+    base_7 = '0'
+while num > 0:
+    remainder = num % 7
+    base_7 = str(remainder) + base_7
+    num //= 7
+print("Output:", base_7)
