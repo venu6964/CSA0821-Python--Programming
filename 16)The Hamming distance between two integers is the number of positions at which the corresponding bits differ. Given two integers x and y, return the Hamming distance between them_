@@ -1,0 +1,16 @@
+x = 1
+y = 4
+
+distance = 0
+while x > 0 or y > 0:
+   
+    bit_x = x & 1
+    bit_y = y & 1
+   
+    if bit_x != bit_y:
+        distance += 1
+    
+    x >>= 1
+    y >>= 1
+
+print("Output:", distance)
