@@ -1,0 +1,15 @@
+nums = [4, 3, 2, 7, 8, 2, 3, 1]
+
+appeared = set()
+
+for num in nums:
+    appeared.add(num)
+
+missing = []
+
+for i in range(1, len(nums) + 1):
+   
+    if i not in appeared:
+        missing.append(i)
+
+print("Output:", missing)
