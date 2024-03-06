@@ -1,0 +1,8 @@
+n = 2
+fibonacci_0 = 0
+fibonacci_1 = 1
+for _ in range(2, n + 1):
+    fibonacci_n = fibonacci_0 + fibonacci_1
+    
+    fibonacci_0, fibonacci_1 = fibonacci_1, fibonacci_n
+print("Output:", fibonacci_n)
