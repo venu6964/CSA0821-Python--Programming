@@ -1,0 +1,13 @@
+num = 5
+binary = bin(num)[2:]
+complement = ''
+
+for bit in binary:
+    if bit == '0':
+        complement += '1'
+    else:
+        complement += '0'
+
+complement_num = int(complement, 2)
+
+print("Output:", complement_num)
